@@ -1,0 +1,220 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Titan One', Tohoma, sans-serif;
+	font-weight: 900;
+	font-size: 100%;
+	height: 100%;
+	line-height: 1.5;
+}
+p {
+	color: #fff;
+	font-family: Arial;
+	font-size: 30px;
+}
+a {
+	color: #fff;
+}
+h1 {
+	margin-top: 0;
+	padding-top: 50px;
+	font-size: 80px;
+	color: #ffcd03;
+	text-shadow: 1px 1px 10px #111;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.0625em;
+	line-height: 100%;
+}
+h2 {
+	font-size: 46px;
+	color: #fff;
+	letter-spacing: 0.0625em;
+}
+h6 {
+	height: 32px;
+	width: 32px;
+	padding-bottom: 0;
+	display: inline;
+}
+.days, .minutes {
+	color: #dd0019;
+	text-shadow: 1px 1px 10px #111;
+	text-transform: uppercase;
+}
+.hours, .seconds {
+	color: #dd0019;
+	text-shadow: 1px 1px 10px #111;
+	text-transform: uppercase;
+}
+#container {
+	background: url('../img/xmasBg.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	min-height: 100%;
+	min-width: 1024px;
+	width: 100%;
+	height: auto;
+	position: fixed;
+	top: 0;
+	left: 0;
+	position: relative;
+}
+#pageWrap {
+	margin: 0 auto;
+}
+#daysValue, 
+#hoursValue,
+#minutesValue,
+#secondsValue	{
+	font-size: 67px;
+	color: #e7e9eb;
+	text-shadow: 1px 0 3px #000;
+}
+.appTitle {
+	
+}
+#timer {
+	margin: 0 auto;
+	width: 90%;
+	height: 200px;
+}
+#daysContainer, 
+#hoursContainer, 
+#minutesContainer, 
+#secondsContainer {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#daysContainer {
+	margin: 0 1%;
+	float: left;
+	display: inline;
+	width: 22%;
+	height: 100%;
+	clear: both;
+	text-align: center;
+}
+#hoursContainer {
+	margin: 0 1%;
+	float: left;
+	display: inline;
+	width: 22%;
+	height: 100%;
+	text-align: center;
+}
+#minutesContainer {
+	margin: 0 1%;	
+	float: left;
+	display: inline;
+	width: 22%;
+	height: 100%;
+	text-align: center;
+}
+#secondsContainer {
+	margin: 0 1%;
+	float: right;
+	display: inline;
+	width: 22%;
+	height: 100%;
+	text-align: center;
+}
+#xmasList {
+	margin-bottom: 20px;
+}
+.xmasPara {
+	width: 80%;
+	margin: 0 auto;
+	padding: 10px 15px;
+}
+.xmasPara > p {
+	color: #e7e9eb;
+	text-shadow: 1px 1px 10px #111;
+	
+	 /*-webkit-text-stroke: 1px red; does not work in Safari 5.0.6*/
+	 /*text-stroke: 1px red;  does not work in Safari 5.0.6*/
+}
+.xmasPara p:nth-child(2) {
+	margin-bottom: 0;
+}
+#messageSanta {
+	padding: 5px 10px;
+	color: #fff;
+	display: inline;
+	margin: 0 0 5px 55px;
+}
+.button {
+   border-top: 1px solid #ffffff;
+   background: #ff5959;
+   background: -webkit-gradient(linear, left top, left bottom, from(#ff2626), to(#ff5959));
+   background: -webkit-linear-gradient(top, #ff2626, #ff5959);
+   background: -moz-linear-gradient(top, #ff2626, #ff5959);
+   background: -ms-linear-gradient(top, #ff2626, #ff5959);
+   background: -o-linear-gradient(top, #ff2626, #ff5959);
+   padding: 5px 10px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: #fff;
+   font-size: 19px;
+   font-family: Arial, sans-serif;
+   font-weight: bold;
+   text-decoration: none;
+   /*vertical-align: middle;*/
+   display: inline;
+   margin-left: 60px;
+   }
+.button:hover {
+   border-top-color: #ffa6a6;
+   background: #ffa6a6;
+   color: ##fff;
+   }
+.button:active {
+   border-top-color: #ffa6a6;
+   background: #ffa6a6;
+   }
+#footerContainer {
+	background: rgba(0,0,0,0.2);
+	border-top: 1px solid rgba(200,200,200,0.3);
+	height: 32px;
+	width: 100%;
+}
+.footerWrap {
+	overflow: hidden;
+	height: 100%;
+}
+.social {
+	height: 100%;
+}
+h6.github {
+	width: 32px;
+	height: 32px;
+	text-indent: -9999px;
+	/*background: url("../img/github-32.png") no-repeat;*/
+}
+h6.twitter {
+	width: 32px;
+	height: 32px;
+	text-indent: -9999px;
+	/*background: url("../img/twitter-32.png") no-repeat;*/
+}
+h6.linkedin {
+	width: 32px;
+	height: 32px;
+	text-indent: -9999px;
+	/*background: url("../img/linkedin-32.png") no-repeat;*/
+}
+h6.facebook {
+	width: 32px;
+	height: 32px;
+	text-indent: -9999px;
+	/*background: url("../img/facebook-32.png") no-repeat;*/
+}
+
