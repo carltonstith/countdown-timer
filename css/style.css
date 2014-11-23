@@ -185,7 +185,7 @@ h6 {
 #footerContainer {
 	background: rgba(0,0,0,0.2);
 	border-top: 1px solid rgba(200,200,200,0.3);
-	height: 32px;
+	height: 30px;
 	width: 100%;
 }
 .footerWrap {
@@ -219,5 +219,12 @@ h6.codepen {
 	height: 32px;
 	text-indent: -9999px;
 	/*background: url("../img/facebook-32.png") no-repeat;*/
+}
+.social a {
+	text-decoration: none;
+}
+.fa-lg {
+	margin: 6px 50px 0 0;
+	vertical-align: 25%;
 }
 
