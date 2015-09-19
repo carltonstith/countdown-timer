@@ -1,6 +1,6 @@
 function cdtd() {
 	
-	var xmas = new Date("December 25, 2014 00:01:00");
+	var xmas = new Date("December 25, 2015 00:01:00");
 	var now = new Date();
 	var timeDiff = xmas.getTime() - now.getTime();
 	

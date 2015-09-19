@@ -7,9 +7,9 @@ html, body {
 	height: 100%;
 	line-height: 1.5;
 }
-p {
+p, i, span {
 	color: #fff;
-	font-family: Arial;
+	font-family: 'Open Sans Condensed', arial, sans-serif;
 	font-size: 30px;
 }
 a {
@@ -176,7 +176,8 @@ h6 {
 .button:hover {
    border-top-color: #ffa6a6;
    background: #ffa6a6;
-   color: ##fff;
+   color: #fff;
+   text-decoration: none;
    }
 .button:active {
    border-top-color: #ffa6a6;

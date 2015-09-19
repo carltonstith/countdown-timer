@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app class="ng-scope">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,19 +7,49 @@
 	
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href='http://fonts.googleapis.com/css?family=Titan+One' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Titan+One|Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
 	<script src="js/countdown.js"></script>
+	<script src="js/xmasForm.js"></script>
 </head>
 
 <body>
+	<section class="myList">
+	
 	<h1>Christmas List</h1>
 	<p>Dear Santa,<br>
 	I have been a very good boy/girl this year. Please send me the stuff that I am asking for. Thank you. <br>Sincerely,<br>John Doe</p>
 	
+		<div ng-controller="ListCtrl" class="ng-scope">
+			<h2 class="ng-binding">My Total Christmas Items: {{getTotalList()}}</h2>
+			<ul class="list-unstyled">
+				<!-- ngRepeat: list in lists -->
+				<li ng-repeat="list in lists" class="ng-scope">
+					<input type="checkbox" ng-model="list.done" class="ng-pristine ng-valid">
+					<span class="done-false">World Peace</span>
+				</li>
+				<!-- end ngRepeat: list in lists -->
+				<li ng-repeat="list in lists" class="ng-scope">
+					<input type="checkbox" ng-model="list.done" class="ng-pristine ng-valid">
+					<span class="done-false">End World Hunger</span>
+				</li>
+				<!-- end ngRepeat: list in lists -->
+			</ul>
+			<form class="form-horizontal ng-valid ng-dirty">
+				<input type="text" ng-model="formListText" ng-model-instant class="ng-valid ng-dirty">
+				<button class="btn" ng-click="addList()">
+					<i class="glyphicon glyphicon-plus"></i>
+					Add - I Want This
+				</button>
+			</form>
+			<button class="btn-large" ng-click="clearCompleted()">
+				<i class="glyphicon glyphicon-trash"></i>
+				Delete - I Don't Want This
+			</button>
+		</div>
+	</section>
 	
-	<form>
-		<input type="text"></input>
-	</form>
+	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>

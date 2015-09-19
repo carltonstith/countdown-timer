@@ -1,15 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Countdown to Christmas!</title>
 	
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.4/angular.min.js"></script>
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href='http://fonts.googleapis.com/css?family=Titan+One' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Titan+One|Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
 	<script src="js/countdown.js"></script>
+	
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/xmasList.js"></script>
 </head>
 
 <body>
@@ -49,10 +54,14 @@
 	
 	<div id="xmasList">
 		<div class="xmasPara">
-			<p>Hey kids! Need a easy way to send your Christmas list? Don't wait until the last minute.</p>
-			<p>First, press the button at the bottom to make a blank list for your stuff. Next, fill out your Christmas list.</p>
-			<p>Finally, if you're happy with with your list, hit send for instant delivery to the North Pole.</p>
-			<p>Click to the button to begin.<a href="xmaslist.html" class="button">Create a List</a></p>
+			<p>Hey kids! Send Santa your Christmas list. Don't wait until the last minute!</p><br>
+			<p>First, press the button at the bottom to make a blank list for your stuff.</p><br><p>Next, fill out your Christmas list.</p><br>
+			<p>Finally, hit the button to send your list to the North Pole.</p>
+			
+			<div class="newPage">
+				<p>Click to the button to begin.<a href="xmaslist.html" class="button" id="wishList">Start my list</a></p>
+			</div>
+			
 		</div> <!-- End xmasPara -->
 	</div> <!-- End xmasList -->
 	
