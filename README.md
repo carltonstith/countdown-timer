@@ -1,6 +1,6 @@
-countdown-timer
+Countdown to Christmas Timer
 ===============
 
-A simple Christmas countdown timer using vanilla JavaScript. 
+A Christmas countdown timer built using vanilla js and Angular. 
 
-This will eventually include a wish list.
+This is a personal project. 
